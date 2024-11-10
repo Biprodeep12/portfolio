@@ -162,7 +162,7 @@ a {
   align-items: center;
   padding-left: 20px;
 }
-.heir {
+#heir {
   width: 180px;
   height: 80px;
   border-radius: 20px;
@@ -178,8 +178,8 @@ a {
   color: #ffffff;
   opacity: 0;
   transition: transform 0.3s ease;
-  animation: ort 0.5s ease 1s forwards;
 }
+
 @keyframes ort {
   0% {
     opacity: 0;
@@ -194,7 +194,10 @@ a {
     transform: scale(1);
   }
 }
-.heir:hover {
+.ot {
+  animation: ort 0.5s ease 1s forwards;
+}
+#heir:hover {
   background-color: white;
   color: black;
   transform: scale(1.1);
@@ -415,9 +418,22 @@ a {
   width: 80%;
   display: grid;
   grid-template-rows: 10% 80%;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  opacity: 0;
+}
+.active {
+  animation: act 0.5s ease-in 0.2s forwards;
+}
+@keyframes act {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    transform: translateY(0);
+  }
 }
 .about-heading {
   font-family: sans-serif;
@@ -467,16 +483,6 @@ a {
   }
 }
 
-@keyframes appear {
-  from {
-    opacity: 0;
-    scale: 0.5;
-  }
-  to {
-    opacity: 1;
-    scale: 1;
-  }
-}
 .skill {
   width: 100%;
   height: 735px;
@@ -519,14 +525,12 @@ a {
   border-radius: 20px;
   padding: 10px;
   cursor: pointer;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0%;
+  opacity: 0;
   transition: box-shadow 0.3s linear, transform 0.3s ease;
 }
 .tech img:hover {
-  box-shadow: 0 0 5px;
-  transform: scale(1.05);
+  box-shadow: 0 0 20px;
+  transform: scale(1.1);
 }
 @media screen and (max-width: 700px) {
   .tech {

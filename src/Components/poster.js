@@ -10,6 +10,71 @@ export default function Poster() {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const intElement = document.querySelector('.int');
+    let hasAnimated = false;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasAnimated) {
+            entry.target.classList.add('active');
+            hasAnimated = true;
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.4 },
+    );
+
+    if (intElement) {
+      observer.observe(intElement);
+    }
+
+    return () => {
+      if (intElement) {
+        observer.unobserve(intElement);
+      }
+    };
+  });
+
+  useEffect(() => {
+    const intElements = document.querySelectorAll('.tech img');
+    let hasAnimated = new Set();
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !hasAnimated.has(entry.target)) {
+          entry.target.classList.add('active');
+          hasAnimated.add(entry.target);
+          observer.unobserve(entry.target);
+
+          setTimeout(() => {
+            entry.target.style.opacity = '1';
+            entry.target.classList.remove('active');
+          }, 2000);
+        }
+      });
+    });
+
+    intElements.forEach((element) => observer.observe(element));
+
+    return () => {
+      intElements.forEach((element) => observer.unobserve(element));
+    };
+  }, []);
+
+  useEffect(() => {
+    const heir = document.getElementById('heir');
+    heir.classList.add('ot');
+    const timer = setTimeout(() => {
+      heir.style.opacity = '1';
+      heir.classList.remove('ot');
+    }, 2100);
+    return () => clearTimeout(timer);
+  }, []);
+
   useEffect(() => {
     const fk = document.getElementById('fk');
     const gb = document.getElementById('gb');
@@ -223,7 +288,7 @@ export default function Poster() {
             </a>
           </div>
           <div className='hier'>
-            <a href='/' className='heir'>
+            <a href='/' id='heir'>
               Hire Me
             </a>
           </div>

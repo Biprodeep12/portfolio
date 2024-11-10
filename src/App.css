@@ -138,15 +138,14 @@ a {
 }
 .socl {
   display: flex;
-  flex-wrap: wrap;
   align-items: start;
   justify-content: start;
-  padding-left: 5px;
+  padding-left: 10px;
+  gap: 6%;
 }
 .social {
   height: 60px;
   width: 60px;
-  margin: 0 15px;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -532,31 +531,7 @@ a {
   box-shadow: 0 0 20px;
   transform: scale(1.1);
 }
-@media screen and (max-width: 700px) {
-  .tech {
-    width: 40%;
-  }
-  .tech img {
-    height: 120px;
-  }
-  .display {
-    display: flex;
-  }
-  .works {
-    display: none;
-  }
-}
-@media screen and (max-width: 547px) {
-  .info-about {
-    font-size: 16px;
-  }
-  .tech img {
-    height: 100px;
-  }
-  .cont-k {
-    grid-template-rows: 60% 40%;
-  }
-}
+
 .n1 {
   animation: n 1s ease 0.5s forwards;
 }
@@ -584,5 +559,109 @@ a {
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+.foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 100%;
+}
+.intfoot {
+  width: 900px;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 30% 20% 20% 30%;
+}
+.fhead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  color: black;
+}
+.fsoc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7%;
+}
+.fsoc img {
+  transition: transform 0.3s ease;
+}
+#alt1,
+#alt2,
+#alt3 {
+  height: 56px;
+}
+.fsoc img:hover {
+  transform: scale(1.2);
+}
+.fcom {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+.fcom a {
+  color: black;
+  transition: text-shadow 0.1s ease;
+}
+.fcom a:hover {
+  text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+@media screen and (max-width: 700px) {
+  .tech {
+    width: 40%;
+  }
+  .tech img {
+    height: 120px;
+  }
+  .display {
+    display: flex;
+  }
+  .works {
+    display: none;
+  }
+  .Navbar {
+    position: absolute;
+  }
+}
+@media screen and (max-width: 547px) {
+  .socl {
+    gap: 10px;
+    padding-left: 0;
+  }
+  .info-about {
+    font-size: 16px;
+  }
+  .tech img {
+    height: 100px;
+  }
+  .cont-k {
+    grid-template-rows: 60% 15% 25%;
+  }
+  .fcom {
+    gap: 10px;
+  }
+  footer {
+    font-size: 15px;
+  }
+  .fsoc {
+    gap: 15px;
   }
 }

@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 export default function Cont() {
+  useEffect(() => {
+    const targetDiv = document.getElementById('hulle');
+    if (targetDiv) {
+      targetDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
   return (
     <>
-      <section className='conti'>
+      <section className='conti' id='hulle'>
         <div className='container-cont'>
           <h1>Contact Me</h1>
-          <form action='https://formspree.io/f/{form_id}' method='post'>
+          <form action='https://formspree.io/f/xqakbqkk' method='post'>
             <label for='name'>Name:</label>
             <input name='name' id='name' type='text' required />
             <label for='email'>Email:</label>

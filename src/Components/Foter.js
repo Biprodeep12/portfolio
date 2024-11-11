@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Foter() {
   return (
@@ -23,11 +24,11 @@ export default function Foter() {
           </a>
         </div>
         <div className='fcom'>
-          <a href='/'>Home</a>
+          <Link to='/'>Home</Link>
           <p>|</p>
-          <a href='/'>Projects</a>
+          <Link to='/Proj'>Projects</Link>
           <p>|</p>
-          <a href='/'>Contact</a>
+          <Link to='/Cont'>Contact</Link>
         </div>
         <footer>COPYRIGHT © 2024 BIPRODEEP BOSE</footer>
       </div>

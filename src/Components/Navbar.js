@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   useEffect(() => {
@@ -40,10 +41,10 @@ export default function Navbar() {
             SKIBIDI
           </a>
           <div className='details'>
-            <a className='home' href='#section1' id='ani'>
+            <Link className='home' to='/' id='ani'>
               Home
               <div id='under'></div>
-            </a>
+            </Link>
             <a href='#about' className='about' id='ani'>
               About
               <div id='under'></div>
@@ -52,10 +53,10 @@ export default function Navbar() {
               Skills
               <div id='under'></div>
             </a>
-            <a href='/' className='proj' id='ani'>
+            <Link to='/Proj' className='proj' id='ani'>
               Projects
               <div id='under'></div>
-            </a>
+            </Link>
           </div>
         </nav>
       </div>

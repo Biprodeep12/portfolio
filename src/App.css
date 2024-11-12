@@ -181,6 +181,7 @@ a {
   font-weight: 500;
   color: black;
   padding-bottom: 5px;
+  cursor: pointer;
 }
 #ani {
   position: relative;

@@ -10,13 +10,13 @@ export default function Foter() {
           <a href='/'>
             <img src='icons8-facebook.svg' id='alt1' alt='1' />
           </a>
-          <a href='/'>
+          <a href='https://github.com/Biprodeep12'>
             <img src='icons8-github.svg' id='alt2' alt='2' />
           </a>
-          <a href='/'>
+          <a href='https://www.instagram.com/bosebd/'>
             <img src='icons8-instagram.svg' id='alt3' alt='3' />
           </a>
-          <a href='/'>
+          <a href='https://www.linkedin.com/in/biprodeep-bose-3b47862ba/'>
             <img src='icons8-linkedin (1).svg' id='alt4' alt='4' />
           </a>
           <a href='/'>

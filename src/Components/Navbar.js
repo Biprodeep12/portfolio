@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
   useEffect(() => {
@@ -33,6 +33,37 @@ export default function Navbar() {
     });
   }, []);
 
+  const location = useLocation();
+  const navi = useNavigate();
+
+  const Ab = () => {
+    if (location.pathname === '/Cont' || '/Proj') {
+      navi('/Main');
+      const timer = setTimeout(() => {
+        const targetDiv = document.getElementById('about');
+        if (targetDiv) {
+          targetDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 500);
+      return () => clearTimeout(timer);
+    } else {
+      window.location.href('#About');
+    }
+  };
+  const sk = () => {
+    if (location.pathname === '/Cont' || '/Proj') {
+      navi('/Main');
+      const timer = setTimeout(() => {
+        const targetDiv = document.getElementById('skill');
+        if (targetDiv) {
+          targetDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 500);
+      return () => clearTimeout(timer);
+    } else {
+      window.location.href('#skill');
+    }
+  };
   return (
     <>
       <div>
@@ -45,14 +76,14 @@ export default function Navbar() {
               Home
               <div id='under'></div>
             </Link>
-            <a href='#about' className='about' id='ani'>
+            <div onClick={Ab} className='about' id='ani'>
               About
               <div id='under'></div>
-            </a>
-            <a href='#skill' className='skl' id='ani'>
+            </div>
+            <div onClick={sk} className='skl' id='ani'>
               Skills
               <div id='under'></div>
-            </a>
+            </div>
             <Link to='/Proj' className='proj' id='ani'>
               Projects
               <div id='under'></div>

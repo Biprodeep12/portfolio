@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 export default function Poster() {
   const images = [
-    'https://imgs.search.brave.com/d_d3whMM9dTuHTqjuXXHXbnVrtN3Hp-8kdT3H7v0ahw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvNGstYXV0dW1u/LWlseWRydHV1YXFp/MzdyZHMuanBn',
-    'https://imgs.search.brave.com/4R-UA1tUaLTUJV68AumGIPzrRvU7pOBxlSQPSYw5qb4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA3LzE0LzE3Lzky/LzM2MF9GXzcxNDE3/OTI2M19zanhER2dX/UWJ3ejd3SGVGTnA2/WDlOY1E5UDI0N3Nu/SS5qcGc',
+    '/weatherjsproj.png',
     'https://imgs.search.brave.com/PAX7Lyn2nT4rSw-HjucB8lgYdJz7CuXjcPcaRPNvG6I/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTM2/MTU3MTUyNi9waG90/by93YWxscGFwZXIt/YWJzdHJhY3Qtc2hh/cGVzLXN0b2NrLWlt/YWdlLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz0xUzBSNzB0/TWYyWjJiYzRXcVVG/UGM1RGVsZWpKZnh5/WjVodEIzVElxNTRF/PQ',
     'https://imgs.search.brave.com/h-GZl1Fg2iQngCbbOM7HfzKkWWwLmMnKv4HF3A9Z8xs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA4LzA2LzA5Lzc0/LzM2MF9GXzgwNjA5/NzQ2Nl9FRlV3VDFj/WENiZlBKa1hJZTcy/YzZnS3NNaGd6YXVp/Ni5qcGc',
     'https://imgs.search.brave.com/p-DhFSH6Jsvf2zU1V_aKGcv-t34OvyVjkF4mQG0he9k/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA3Lzg5LzQ4LzAx/LzM2MF9GXzc4OTQ4/MDE2MF9jbXVKRnRj/YjMzQ040cVg2TklW/dWMzOHdKSkFVZ1R1/Qy5qcGc',
@@ -259,6 +258,13 @@ export default function Poster() {
       }
     });
   }, []);
+  const proje = () => {
+    if (currentIndex === 0) {
+      window.location.href = 'https://biprodeep12.github.io/Weather-Js/';
+    } else {
+      console.log('podkalo');
+    }
+  };
 
   return (
     <div className='poster' id='section1'>
@@ -274,13 +280,15 @@ export default function Poster() {
             <a href='/' className='social'>
               <img id='fk' src='icons8-facebook.svg' alt='1' />
             </a>
-            <a href='/' className='social'>
+            <a href='https://github.com/Biprodeep12' className='social'>
               <img id='gb' src='icons8-github.svg' alt='2' />
             </a>
-            <a href='/' className='social'>
+            <a href='https://www.instagram.com/bosebd/' className='social'>
               <img id='im' src='icons8-instagram.svg' alt='3' />
             </a>
-            <a href='/' className='social'>
+            <a
+              href='https://www.linkedin.com/in/biprodeep-bose-3b47862ba/'
+              className='social'>
               <img id='ln' src='icons8-linkedin (1).svg' alt='4' />
             </a>
             <a href='/' className='social'>
@@ -304,7 +312,7 @@ export default function Poster() {
             />
           </div>
           <div className='main-img' id='main-img'>
-            <img src={images[currentIndex]} alt='Current' />
+            <img onClick={proje} src={images[currentIndex]} alt='Current' />
           </div>
           <div className='right-img' id='r1' onClick={handleNext}>
             <img

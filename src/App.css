@@ -183,6 +183,55 @@ a {
   padding-bottom: 5px;
   cursor: pointer;
 }
+.dropd {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 85px;
+  height: 85px;
+  border-radius: 50px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  visibility: hidden;
+}
+.dropd:hover {
+  box-shadow: 0 0 10px;
+}
+.dropd img {
+  width: 70px;
+  height: 70px;
+}
+.dwom {
+  top: 88px;
+  right: 15px;
+  width: 150px;
+  height: 170px;
+  position: fixed;
+  z-index: 9;
+  box-shadow: 0 0 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 20px;
+  background-color: white;
+  visibility: hidden;
+}
+#tion1 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  cursor: pointer;
+}
+#tion1:hover {
+  color: white;
+  text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
 #ani {
   position: relative;
 }
@@ -270,9 +319,14 @@ a {
   justify-content: center;
 }
 .social img {
-  width: 60px;
   cursor: pointer;
   opacity: 0;
+  width: 60px;
+}
+#ln,
+#ye {
+  margin-top: 4px;
+  width: 53px;
 }
 .hier {
   display: flex;
@@ -370,6 +424,7 @@ a {
   align-items: center;
   justify-content: center;
   position: relative;
+  max-height: 580px;
 }
 .left-img,
 .main-img,
@@ -758,6 +813,12 @@ footer {
   }
   .Navbar {
     position: absolute;
+  }
+  .details {
+    display: none;
+  }
+  .dropd {
+    visibility: visible;
   }
 }
 @media screen and (max-width: 547px) {

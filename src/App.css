@@ -844,4 +844,7 @@ footer {
   .fsoc {
     gap: 15px;
   }
+  .Navbar {
+    width: 92vw;
+  }
 }

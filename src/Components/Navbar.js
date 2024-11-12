@@ -68,18 +68,19 @@ export default function Navbar() {
   const images = ['/align-justify-svgrepo-com.svg', '/cross.svg'];
 
   const [pod, dop] = useState(images[0]);
-  const kal = document.getElementById('kal');
-  const dw = document.getElementById('dwom');
 
   const toggleStyle = () => {
+    const imghd = document.getElementById('kall');
+    const dw = document.getElementById('dwom');
+
     if (pod === images[0]) {
-      kal.style.width = '50px';
-      kal.style.height = '50px';
+      imghd.style.width = '50px';
+      imghd.style.height = '50px';
       dop(images[1]);
       dw.style.visibility = 'visible';
     } else {
-      kal.style.width = '70px';
-      kal.style.height = '70px';
+      imghd.style.width = '70px';
+      imghd.style.height = '70px';
       dop(images[0]);
       dw.style.visibility = 'hidden';
     }
@@ -111,7 +112,7 @@ export default function Navbar() {
             </Link>
           </div>
           <div className='dropd' onClick={toggleStyle}>
-            <img src={pod} id='kal' alt='icon' />
+            <img src={pod} id='kall' alt='icon' />
           </div>
           <div className='dwom' id='dwom'>
             <Link to='/' id='tion1'>

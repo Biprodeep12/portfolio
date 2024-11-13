@@ -132,7 +132,7 @@ body {
 }
 #message {
   min-height: 100px;
-  min-width: 400px;
+  width: 80%;
   max-width: 500px;
   border-radius: 10px;
   border: 2px solid black;
@@ -846,5 +846,28 @@ footer {
   }
   .Navbar {
     width: 92vw;
+  }
+  .tn-proj {
+    padding-left: 0;
+    justify-content: center;
+  }
+  .sec1 {
+    height: 380px;
+    width: 300px;
+  }
+  .tnoct {
+    width: 92vw;
+  }
+  .conti {
+    padding-top: 50px;
+  }
+  .container-cont {
+    width: 85%;
+  }
+  .container-cont input {
+    width: 85%;
+  }
+  #message {
+    width: 85%;
   }
 }

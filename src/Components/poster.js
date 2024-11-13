@@ -272,8 +272,11 @@ export default function Poster() {
         <div className='cont-k'>
           <div className='introN'>
             <p>
-              Hi, I am <span>Biprodeep Bose</span>
-              <br /> Hire Me Now, At your House in 24 Hrs
+              Hi, I am
+              <span>
+                <b> Biprodeep Bose</b>
+              </span>
+              <br /> A Fullstack Developer and Front Developer
             </p>
           </div>
           <div className='socl'>

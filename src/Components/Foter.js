@@ -5,7 +5,7 @@ export default function Foter() {
   return (
     <div className='foot'>
       <div className='intfoot'>
-        <div className='fhead'>SKIBIDI</div>
+        <div className='fhead'> BIP.BOSE</div>
         <div className='fsoc'>
           <a href='/'>
             <img src='icons8-facebook.svg' id='alt1' alt='1' />

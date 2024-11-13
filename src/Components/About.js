@@ -7,20 +7,20 @@ export default function About() {
         <div className='about-heading'>ABOUT ME</div>
         <div className='bio'>
           <div className='img-about'>
-            <img src='pfp.jpg' alt='pfp' />
+            <img src='pfop.jpeg' alt='pfp' />
           </div>
           <div className='info-about'>
             <p>
-              Hi there! I'm the person who confidently walks into a room and
-              forgets why I came in. People say I'm a 'jack of all trades,' but
-              really, I'm more of a 'king of chaos.' I have a degree in
-              procrastination with a minor in losing my keys, and my most
-              marketable skill is knowing every wrong way to do things. Some
-              people call it ‘trial and error’; I call it ‘embracing the
-              adventure of almost failing.’ If you need someone to lighten the
-              mood with a clever joke or accidentally set off a fire alarm just
-              by existing—look no further, I’m your person! Proudly powered by
-              caffeine and a questionable amount of optimism!
+              Hi, I’m Biprodeep Bose from Kolkata, India. I’m a first-year
+              student at the Calcutta Institute of Engineering and Management,
+              where I’m pursuing a B.Tech in Computer Science and Engineering
+              (CSE). I have a passion for coding, continuous learning, and
+              building innovative technology. Currently, I’m aiming to secure
+              internships that will allow me to apply my skills in real-world
+              settings, gain hands-on experience, and connect with industry
+              professionals. My long-term goal is to become a full-stack
+              developer, mastering both front-end and back-end technologies to
+              build efficient, user-centered applications.
             </p>
           </div>
         </div>

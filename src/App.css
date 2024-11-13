@@ -188,7 +188,7 @@ a {
   text-decoration: none;
 }
 .NavLogo {
-  font-family: sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 45px;
   font-weight: 700;
   color: black;
@@ -255,9 +255,7 @@ a {
   cursor: pointer;
 }
 #tion1:hover {
-  color: white;
-  text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
-    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+  color: rgb(127, 127, 127);
 }
 #ani {
   position: relative;
@@ -329,13 +327,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: end;
-  padding-left: 15px;
 }
 .socl {
   display: flex;
   align-items: start;
   justify-content: start;
-  padding-left: 10px;
   gap: 6%;
 }
 .social {
@@ -359,7 +355,7 @@ a {
   display: flex;
   justify-content: left;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 #heir {
   width: 180px;
@@ -442,8 +438,9 @@ a {
   }
 }
 .introN span {
-  font-size: 45px;
+  font-size: 42px;
   font-weight: 600;
+  font-family: Aquire;
 }
 .works {
   display: flex;
@@ -664,6 +661,7 @@ a {
   font-size: 25px;
   justify-content: left;
   color: black;
+  font-family: sans-serif;
 }
 @media screen and (max-width: 920px) {
   .bio {
@@ -779,7 +777,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 45px;
   font-weight: 700;
   color: black;
@@ -913,7 +911,7 @@ footer {
   }
   .sec1 {
     height: 260px;
-    width: 180px;
+    width: 95%;
     align-self: center;
     justify-self: center;
   }

@@ -91,7 +91,7 @@ export default function Navbar() {
       <div>
         <nav className='Navbar'>
           <a className='NavLogo' href='/'>
-            SKIBIDI
+            BIP.BOSE
           </a>
           <div className='details'>
             <Link className='home' to='/' id='ani'>

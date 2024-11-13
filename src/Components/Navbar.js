@@ -74,8 +74,8 @@ export default function Navbar() {
     const dw = document.getElementById('dwom');
 
     if (pod === images[0]) {
-      imghd.style.width = '50px';
-      imghd.style.height = '50px';
+      imghd.style.width = '35px';
+      imghd.style.height = '35px';
       dop(images[1]);
       dw.style.visibility = 'visible';
     } else {

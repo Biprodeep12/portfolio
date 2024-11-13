@@ -197,9 +197,6 @@ a {
   cursor: pointer;
   visibility: hidden;
 }
-.dropd:hover {
-  box-shadow: 0 0 10px;
-}
 .dropd img {
   width: 70px;
   height: 70px;

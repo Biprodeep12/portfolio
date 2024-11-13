@@ -128,7 +128,7 @@ export default function Navbar() {
               Projects
             </Link>
             <Link to='/Cont' id='tion1'>
-              Contacts
+              Contact
             </Link>
           </div>
         </nav>

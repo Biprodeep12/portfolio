@@ -12,10 +12,11 @@ export default function Proj() {
       <section className='tnoc' id='llu'>
         <div className='tnoct'>
           <div className='tn-head'>PROJECTS</div>
-          <a
-            href='https://biprodeep12.github.io/Weather-Js/'
-            className='tn-proj'>
-            <div className='sec1'>
+          <div className='tn-proj'>
+            <a
+              href='https://biprodeep12.github.io/Weather-Js/'
+              className='sec1'
+              id='proje1'>
               <img src='/weatherjs.png' alt='1' />
               <div className='sec1-about'>
                 <h2>WeatherJs - Weather Dashboard</h2>
@@ -26,8 +27,14 @@ export default function Proj() {
                   and the weather state. Animated SVGs etc.
                 </p>
               </div>
-            </div>
-          </a>
+            </a>
+            <a href='/' className='sec1' id='proje2'>
+              +
+            </a>
+            <a href='/' className='sec1' id='proje3'>
+              +
+            </a>
+          </div>
         </div>
       </section>
     </>

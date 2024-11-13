@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Poster() {
   const images = [
@@ -262,7 +263,7 @@ export default function Poster() {
     if (currentIndex === 0) {
       window.location.href = 'https://biprodeep12.github.io/Weather-Js/';
     } else {
-      console.log('podkalo');
+      window.location.href = '*';
     }
   };
 
@@ -299,9 +300,9 @@ export default function Poster() {
             </a>
           </div>
           <div className='hier'>
-            <a href='/' id='heir'>
+            <Link to='/Cont' id='heir'>
               Hire Me
-            </a>
+            </Link>
           </div>
         </div>
         <div className='works' id='works'>

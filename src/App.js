@@ -11,7 +11,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <img src='wallpaperD.jpg' id='wad' alt='pod' />
         <Navbar />
         <Routes>
           <Route index element={<Main />} />

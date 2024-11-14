@@ -8,14 +8,10 @@ import NoPage from './Components/NoPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
-  document.body.style.backgroundImage = "url('wallpaperD.jpg')";
-  document.body.style.backgroundSize = 'cover';
-  document.body.style.backgroundRepeat = 'no-repeat';
-  document.body.style.backgroundPosition = 'center';
-  document.body.style.backgroundAttachment = 'fixed';
   return (
     <>
       <BrowserRouter>
+        <img src='wallpaperD.jpg' id='wad' alt='pod' />
         <Navbar />
         <Routes>
           <Route index element={<Main />} />

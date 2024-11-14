@@ -12,9 +12,10 @@ html {
   background-color: rgb(137, 137, 137);
   border-radius: 20px;
 }
+/* }
 body {
-  background-color: #ffffff;
-}
+} */
+
 .tnoc {
   display: flex;
   align-items: end;

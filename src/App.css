@@ -12,9 +12,9 @@ html {
   background-color: rgb(137, 137, 137);
   border-radius: 20px;
 }
-/* }
 body {
-} */
+  background-color: #ffffff;
+}
 #wad {
   background-size: cover;
   background-repeat: no-repeat;

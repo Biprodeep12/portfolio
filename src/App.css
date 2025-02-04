@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+* {
+  margin: 0;
+}
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -27,11 +30,12 @@ body {
   display: flex;
   align-items: end;
   justify-content: center;
-  height: 735px;
+  padding-top: 85px;
+  margin-bottom: 150px;
 }
 .tnoct {
   width: 100%;
-  height: 650px;
+  min-height: 650px;
   display: grid;
   grid-template-rows: 15% 85%;
 }
@@ -43,9 +47,9 @@ body {
   font-weight: 800;
 }
 .tn-proj {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   opacity: 0;
   animation: pj 0.5s ease-in-out forwards;
 }
@@ -60,8 +64,11 @@ body {
   }
 }
 .sec1 {
+  align-self: center;
+  justify-self: center;
   height: 480px;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   border-radius: 15px;
   box-shadow: 0 0 5px black;
   transition: transform 0.3s ease;
@@ -69,57 +76,39 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-}
-#proje2,
-#proje3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: sans-serif;
-  font-size: 50px;
-  font-weight: 800;
-  flex-wrap: wrap;
-  color: black;
+  margin-bottom: 50px;
 }
 .sec1 img {
   object-fit: fill;
 }
 .sec1-about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   font-family: sans-serif;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: rgb(111, 141, 164);
+  background-color: rgb(75, 128, 168);
   height: 100%;
-  padding-top: 0;
-  color: black;
+  padding: 10px 10px 0 10px;
 }
+
 .sec1:hover {
   transform: scale(1.03);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1244px) {
   .sec1 {
-    height: 380px;
-    width: 300px;
+    width: 90%;
+    height: 430px;
   }
   .sec1-about {
-    font-size: 13px;
+    gap: 10px;
   }
 }
-@media screen and (max-width: 950px) {
-  .sec1 {
-    height: 330px;
-    width: 250px;
-  }
-  .sec1-about {
-    font-size: 12px;
-  }
-}
-
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .eror {
   display: flex;
   justify-content: center;
@@ -192,6 +181,10 @@ body {
   background-color: aqua;
   margin: 100px;
 }
+.togglebtn {
+  position: fixed;
+  z-index: 50;
+}
 .Navbar {
   padding-left: 30px;
   padding-top: 20px;
@@ -227,9 +220,9 @@ a {
   font-family: sans-serif;
   font-size: 30px;
   font-weight: 500;
-  color: black;
   padding-bottom: 5px;
   cursor: pointer;
+  color: black;
 }
 .dropd {
   position: fixed;
@@ -697,6 +690,10 @@ a {
     justify-content: center;
     text-align: center;
   }
+  .tn-proj {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 
 .skill {
@@ -728,7 +725,6 @@ a {
   margin-top: 50px;
 }
 .tech {
-  height: 150px;
   width: 30%;
   margin: 10px 0;
   display: flex;
@@ -744,7 +740,18 @@ a {
   opacity: 0;
   transition: box-shadow 0.3s linear, transform 0.3s ease;
 }
-.tech img:hover {
+.nextsvg {
+  background-color: white;
+  box-shadow: 0 0 10px;
+  border-radius: 20px;
+  width: 120px;
+  padding: 25px;
+  cursor: pointer;
+  opacity: 1;
+  transition: box-shadow 0.3s linear, transform 0.3s ease;
+}
+.tech img:hover,
+.nextsvg:hover {
   box-shadow: 0 0 20px;
   transform: scale(1.1);
 }
@@ -841,12 +848,16 @@ footer {
   font-size: 17px;
   font-family: sans-serif;
 }
+
 @media screen and (max-width: 700px) {
   .tech {
     width: 40%;
   }
   .tech img {
     height: 120px;
+  }
+  .nextsvg {
+    width: 90px;
   }
   .display {
     display: flex;
@@ -863,16 +874,6 @@ footer {
   .dropd {
     visibility: visible;
   }
-  .tn-proj {
-    align-items: start;
-  }
-  .sec1 {
-    height: 280px;
-    width: 200px;
-  }
-  .sec1-about {
-    font-size: 11px;
-  }
   .eror {
     font-size: 100px;
   }
@@ -887,6 +888,10 @@ footer {
   }
   .tech img {
     height: 100px;
+  }
+  .nextsvg {
+    max-width: 70px;
+    min-width: 70px;
   }
   .cont-k {
     grid-template-rows: 60% 15% 25%;
@@ -918,28 +923,14 @@ footer {
   #message {
     width: 85%;
   }
-  .tnoc {
-    height: 850px;
-  }
-  .tnoct {
-    height: 800px;
-    display: grid;
-  }
-  .tn-proj {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-  }
-  .sec1 {
-    height: 260px;
-    width: 95%;
-    align-self: center;
-    justify-self: center;
-  }
-  .sec1-about {
-    font-size: 10px;
-  }
   .eror {
     font-size: 60px;
+  }
+  .tnoct {
+    grid-template-rows: 10% 90%;
+  }
+  .tn-proj {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   }
 }

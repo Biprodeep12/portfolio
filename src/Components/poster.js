@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 export default function Poster() {
   const images = [
     '/weatherjsproj.png',
-    'https://imgs.search.brave.com/PAX7Lyn2nT4rSw-HjucB8lgYdJz7CuXjcPcaRPNvG6I/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTM2/MTU3MTUyNi9waG90/by93YWxscGFwZXIt/YWJzdHJhY3Qtc2hh/cGVzLXN0b2NrLWlt/YWdlLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz0xUzBSNzB0/TWYyWjJiYzRXcVVG/UGM1RGVsZWpKZnh5/WjVodEIzVElxNTRF/PQ',
-    'https://imgs.search.brave.com/h-GZl1Fg2iQngCbbOM7HfzKkWWwLmMnKv4HF3A9Z8xs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA4LzA2LzA5Lzc0/LzM2MF9GXzgwNjA5/NzQ2Nl9FRlV3VDFj/WENiZlBKa1hJZTcy/YzZnS3NNaGd6YXVp/Ni5qcGc',
-    'https://imgs.search.brave.com/p-DhFSH6Jsvf2zU1V_aKGcv-t34OvyVjkF4mQG0he9k/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA3Lzg5LzQ4LzAx/LzM2MF9GXzc4OTQ4/MDE2MF9jbXVKRnRj/YjMzQ040cVg2TklW/dWMzOHdKSkFVZ1R1/Qy5qcGc',
+    '/ChatImage.png',
+    '/ecomImage.png',
+    '/drugImage.png',
+    '/newsImage.png',
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -262,8 +263,18 @@ export default function Poster() {
   const proje = () => {
     if (currentIndex === 0) {
       window.location.href = 'https://biprodeep12.github.io/Weather-Js/';
-    } else {
-      window.location.href = '*';
+    }
+    if (currentIndex === 1) {
+      window.location.href = 'https://chat-room-sepia-iota.vercel.app/';
+    }
+    if (currentIndex === 2) {
+      window.location.href = 'https://ecomfracture.vercel.app/';
+    }
+    if (currentIndex === 3) {
+      window.location.href = 'https://drug-shop-k8vj.vercel.app/';
+    }
+    if (currentIndex === 4) {
+      window.location.href = 'https://news-nextjs-gamma.vercel.app/';
     }
   };
 

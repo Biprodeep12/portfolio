@@ -37,9 +37,9 @@ export default function Proj() {
                 <h2>Chat.Nx - A Simple ChatRoom</h2>
                 <h3>React and Javascript</h3>
                 <p>
-                  This is a simple Chatroom made with React and javascript, html
+                  This is a simple Chatroom made with React, javascript, html
                   and css. For database I am using Firebase firestore and
-                  realtime storage. No Authentication ,A fun Prject.
+                  realtime storage. No Authentication ,A fun Project.
                 </p>
               </div>
             </a>
@@ -53,9 +53,9 @@ export default function Proj() {
                 <h3>React and Javascript</h3>
                 <p>
                   This is a drug store where we can add and buy
-                  drugs/medicines.This is made with React and javascript, html
-                  and css. For database I am using Firebase firestore, this is
-                  my first project with firebase. With Firebase Authentication.
+                  drugs/medicines.This is made with React, javascript, html and
+                  css. For database I am using Firebase firestore, this is my
+                  first project with firebase. With Firebase Authentication.
                 </p>
               </div>
             </a>
@@ -68,7 +68,7 @@ export default function Proj() {
                 <h2>News.Nx - Simple News Platform</h2>
                 <h3>Next and Javascript</h3>
                 <p>
-                  This is a simple News platform, this being made with Next,
+                  This is a simple News platform, this made with Next,
                   javascript, html and css. The news can be filtered between
                   relevance and popularity. The news are collected from an API.
                 </p>

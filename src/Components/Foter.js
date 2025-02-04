@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Foter({ darkMode, setDarkMode }) {
+export default function Foter() {
   return (
     <div className='foot'>
       <div className='intfoot'>

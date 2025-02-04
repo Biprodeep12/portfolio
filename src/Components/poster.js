@@ -41,7 +41,7 @@ export default function Poster() {
   });
 
   useEffect(() => {
-    const intElements = document.querySelectorAll('.tech img');
+    const intElements = document.querySelectorAll('.tech img, .nextsvg');
     let hasAnimated = new Set();
 
     const observer = new IntersectionObserver((entries) => {

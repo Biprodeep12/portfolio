@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
-export default function Navbar({ darkMode, setDarkMode }) {
+export default function Navbar() {
   useEffect(() => {
     const aniElements = document.querySelectorAll('#ani');
 
